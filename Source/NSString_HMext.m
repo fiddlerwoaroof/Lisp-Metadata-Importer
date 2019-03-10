@@ -6,8 +6,8 @@
 //  Licensed under the MIT license--see the accompanying LICENSE.txt
 //  file.
 
-#import "NSString_HMExt.h"
-#import "NSData_HMExt.h"
+#import "NSString_HMext.h"
+#import "NSData_HMext.h"
 
 @implementation NSString (NSString_ParsingExtensions)
 
@@ -71,7 +71,7 @@
 - (NSString*)initWithContentsOfFile:(NSString*)path maxSize:(int)theMaxSize encoding:(NSStringEncoding)theEncoding error:(NSError**)theError
 {
     NSData		*d;
-    unsigned int		len;
+    NSUInteger		len;
     const unsigned char	*data_bytes;
     
     d = [[NSData alloc] initWithContentsOfFile:path maxSize:theMaxSize error:theError];

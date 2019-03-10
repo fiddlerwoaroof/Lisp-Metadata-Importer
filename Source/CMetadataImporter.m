@@ -211,7 +211,7 @@ static NSStringEncoding PossibleSourceTextEncodings[] = {	NSUTF8StringEncoding,
     NSTextCheckingResult *match = [regex firstMatchInString:line options:NSMatchingAnchored range:NSMakeRange(0, [line length])];
     if (match)
     {
-        NSLog(@"%s", line);
+        NSLog(@"%s", [line UTF8String]);
         NSString *name = [line substringWithRange: [match rangeAtIndex:1]];
         [[attributes objectForKey:key] addObject:name];
         return YES;

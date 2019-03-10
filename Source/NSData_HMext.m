@@ -7,7 +7,7 @@
 //  file.
 
 
-#import "NSData_HMExt.h"
+#import "NSData_HMext.h"
 #import "DebugLog.h"
 
 
@@ -17,13 +17,13 @@
 //
 // More or less taken from GnuStep's implementation of NSData.
 
-static BOOL readContentsOfFile(NSString* path, void** buf, unsigned int maxLen, unsigned int* len, NSZone* zone)
+static BOOL readContentsOfFile(NSString* path, void** buf, size_t maxLen, size_t* len, NSZone* zone)
 {
     const char	*thePath = 0;
     FILE		*theFile = 0;
     void		*tmp = 0;
-    int			c;
-    long		fileLength;
+    size_t			c;
+    size_t		fileLength;
     
     thePath = [path fileSystemRepresentation];
     if (thePath == 0)
@@ -79,7 +79,7 @@ static BOOL readContentsOfFile(NSString* path, void** buf, unsigned int maxLen, 
     if (fileLength == 0)
     {
         unsigned char	buf[BUFSIZ];
-        unsigned bytesToRead = maxLen;
+        size_t bytesToRead = maxLen;
         /*
          * Special case ... a file of length zero may be a named pipe or some
          * file in the /proc filesystem, which will return us data if we read
@@ -186,7 +186,7 @@ failure:
 - (id) initWithContentsOfFile: (NSString*)path maxSize:(int)theMaxSize error:(NSError**)error
 {
     void		*fileBytes = NULL;
-    unsigned	fileLength = 0;
+    size_t	fileLength = 0;
     NSZone	*zone;
     
     zone = NSDefaultMallocZone();
@@ -195,7 +195,7 @@ failure:
         if (error)
         {
             NSNumber *errorCode = [NSNumber numberWithInt:errno];
-            NSString *errorDescription = [NSString stringWithCString:strerror(errno)];
+            NSString *errorDescription = [NSString stringWithCString:strerror(errno) encoding:NSUTF8StringEncoding];
             NSString* errorPath = path;
             NSMutableDictionary *errorAttribs = [NSMutableDictionary dictionaryWithCapacity:2];
             [errorAttribs setObject:errorCode forKey:@"Errno"];
