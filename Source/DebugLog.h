@@ -7,9 +7,9 @@
 
 
 typedef enum {
-	DEBUG_LEVEL_VERBOSE = 0,
-	DEBUG_LEVEL_DEBUG = 1,
-	DEBUG_LEVEL_OFF = 2,
+    DEBUG_LEVEL_VERBOSE = 0,
+    DEBUG_LEVEL_DEBUG = 1,
+    DEBUG_LEVEL_OFF = 2,
 } DebugLevel;
 
 DebugLevel DebugLevelNameToValue(NSString *name);

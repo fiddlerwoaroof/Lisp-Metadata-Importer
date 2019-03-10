@@ -14,23 +14,23 @@
 
 Boolean GetMetadataForFile(void* thisInterface, NSMutableDictionary *attributes, NSString *contentTypeUTI, NSString *pathToFile)
 {
-	BOOL theResult = NO;
-	NSAutoreleasePool *theAutoreleasePool = [[NSAutoreleasePool alloc] init];
-	
-	@try
-	{
-		CMetadataImporter *theImporter = [[[CMetadataImporter alloc] init] autorelease];
-		theResult = [theImporter importFile:pathToFile contentType:contentTypeUTI attributes:attributes];
-	}
-	@catch (NSException *localException)
-	{
-		NSLog(@"Exception caught during import operation: %@", localException);
-	}
-	@finally
-	{
-	}
-	
-	[theAutoreleasePool release];
-	
-	return(theResult);;
+    BOOL theResult = NO;
+    NSAutoreleasePool *theAutoreleasePool = [[NSAutoreleasePool alloc] init];
+    
+    @try
+    {
+        CMetadataImporter *theImporter = [[[CMetadataImporter alloc] init] autorelease];
+        theResult = [theImporter importFile:pathToFile contentType:contentTypeUTI attributes:attributes];
+    }
+    @catch (NSException *localException)
+    {
+        NSLog(@"Exception caught during import operation: %@", localException);
+    }
+    @finally
+    {
+    }
+    
+    [theAutoreleasePool release];
+    
+    return(theResult);;
 }

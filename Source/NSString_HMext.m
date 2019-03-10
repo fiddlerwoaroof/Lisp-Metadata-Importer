@@ -20,28 +20,28 @@
  */
 - (NSArray*) componentsSeparatedByCharacterFromSet: (NSCharacterSet*)separatorSet
 {
-	NSRange search;
-	NSRange complete;
-	NSRange found;
-	NSMutableArray *array = [NSMutableArray array];
-
-	search = NSMakeRange(0, [self length]);
-	complete = search;
-	found = [self rangeOfCharacterFromSet:separatorSet];
-	while (found.length != 0)
+    NSRange search;
+    NSRange complete;
+    NSRange found;
+    NSMutableArray *array = [NSMutableArray array];
+    
+    search = NSMakeRange(0, [self length]);
+    complete = search;
+    found = [self rangeOfCharacterFromSet:separatorSet];
+    while (found.length != 0)
     {
-		NSRange current;
-
-		current = NSMakeRange(search.location, found.location - search.location);
-		[array addObject:[self substringWithRange:current]];
-
-		search = NSMakeRange(found.location + found.length, complete.length - found.location - found.length);
-		found = [self rangeOfCharacterFromSet:separatorSet options:0 range:search];
+        NSRange current;
+        
+        current = NSMakeRange(search.location, found.location - search.location);
+        [array addObject:[self substringWithRange:current]];
+        
+        search = NSMakeRange(found.location + found.length, complete.length - found.location - found.length);
+        found = [self rangeOfCharacterFromSet:separatorSet options:0 range:search];
     }
-	// Add the last search string range
-	[array addObject: [self substringWithRange: search]];
-
-	return array;
+    // Add the last search string range
+    [array addObject: [self substringWithRange: search]];
+    
+    return array;
 }
 
 /**
@@ -49,11 +49,11 @@
  */
 + (NSString*)stringWithContentsOfFile:(NSString*)pathToFile maxSize:(int)theMaxSize encoding:(NSStringEncoding)theEncoding error:(NSError**)theError
 {
-	NSString	*obj;
-	
-	obj = [self allocWithZone:NSDefaultMallocZone()];
-	obj = [obj initWithContentsOfFile:pathToFile maxSize:theMaxSize encoding:theEncoding error:theError];
-	return [obj autorelease];
+    NSString	*obj;
+    
+    obj = [self allocWithZone:NSDefaultMallocZone()];
+    obj = [obj initWithContentsOfFile:pathToFile maxSize:theMaxSize encoding:theEncoding error:theError];
+    return [obj autorelease];
 }
 
 /**
@@ -70,28 +70,28 @@
  */
 - (NSString*)initWithContentsOfFile:(NSString*)path maxSize:(int)theMaxSize encoding:(NSStringEncoding)theEncoding error:(NSError**)theError
 {
-	NSData		*d;
-	unsigned int		len;
-	const unsigned char	*data_bytes;
-	
-	d = [[NSData alloc] initWithContentsOfFile:path maxSize:theMaxSize error:theError];
-	if (d == nil)
+    NSData		*d;
+    unsigned int		len;
+    const unsigned char	*data_bytes;
+    
+    d = [[NSData alloc] initWithContentsOfFile:path maxSize:theMaxSize error:theError];
+    if (d == nil)
     {
-		[self dealloc];
-		return nil;
+        [self dealloc];
+        return nil;
     }
-	len = [d length];
-	if (len == 0)
+    len = [d length];
+    if (len == 0)
     {
-		[d release];
-		[self dealloc];
-		return @"";
+        [d release];
+        [self dealloc];
+        return @"";
     }
-	data_bytes = [d bytes];
-	
-	self = [self initWithData:d encoding:theEncoding];
-	[d release];
-	return self;
+    data_bytes = [d bytes];
+    
+    self = [self initWithData:d encoding:theEncoding];
+    [d release];
+    return self;
 }
 
 @end

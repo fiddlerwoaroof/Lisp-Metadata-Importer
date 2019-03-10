@@ -13,7 +13,7 @@
 #import "AGRegex.h"
 
 @interface CMetadataImporter : NSObject {
-
+    
 }
 
 // "Public" methods.
