@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45796127083162D100A923A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45796126083162D100A923A6 /* Foundation.framework */; };
+		457F54E70832F2830043FBA6 /* CMetadataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45967FEE0832BF890009C12F /* CMetadataImporter.m */; };
+		459680030832BF890009C12F /* CMetadataImporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45967FED0832BF890009C12F /* CMetadataImporter.h */; };
+		459680070832BF890009C12F /* GetMetadataForFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 45967FF30832BF890009C12F /* GetMetadataForFile.m */; };
+		459680090832BF890009C12F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 45967FF50832BF890009C12F /* main.c */; };
+		459680310832BFC50009C12F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4596802B0832BFC50009C12F /* InfoPlist.strings */; };
+		459680320832BFC50009C12F /* schema.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4596802D0832BFC50009C12F /* schema.strings */; };
+		459680340832BFC50009C12F /* schema.xml in Resources */ = {isa = PBXBuildFile; fileRef = 459680300832BFC50009C12F /* schema.xml */; };
+		8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */; };
+		C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86B05260671AA6E00DD9006 /* CoreServices.framework */; };
+		DE4C707608CE1588001A80F8 /* NSString_HMext.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C707508CE1588001A80F8 /* NSString_HMext.m */; };
+		DE4C70DB08CE2E1D001A80F8 /* NSString_HMext.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C707508CE1588001A80F8 /* NSString_HMext.m */; };
+		DE75AD0108CD14BB008AC2B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE75AD0008CD14BB008AC2B5 /* main.m */; };
+		DE75AD0208CD14E6008AC2B5 /* CMetadataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45967FEE0832BF890009C12F /* CMetadataImporter.m */; };
+		DE75AD0308CD14F3008AC2B5 /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAC936C08C7FEA8006901D9 /* AGRegex.m */; };
+		DE75AD0408CD1523008AC2B5 /* chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937008C7FEDE006901D9 /* chartables.c */; };
+		DE75AD0508CD1527008AC2B5 /* get.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937208C7FEDE006901D9 /* get.c */; };
+		DE75AD0608CD152A008AC2B5 /* maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937408C7FEDE006901D9 /* maketables.c */; };
+		DE75AD0708CD152D008AC2B5 /* pcre.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937508C7FEDE006901D9 /* pcre.c */; };
+		DE75AD0808CD1530008AC2B5 /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937708C7FEDE006901D9 /* study.c */; };
+		DEAC936D08C7FEA8006901D9 /* AGRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC936B08C7FEA8006901D9 /* AGRegex.h */; };
+		DEAC936E08C7FEA8006901D9 /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAC936C08C7FEA8006901D9 /* AGRegex.m */; };
+		DEAC937808C7FEDE006901D9 /* chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937008C7FEDE006901D9 /* chartables.c */; };
+		DEAC937908C7FEDE006901D9 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC937108C7FEDE006901D9 /* config.h */; };
+		DEAC937A08C7FEDE006901D9 /* get.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937208C7FEDE006901D9 /* get.c */; };
+		DEAC937B08C7FEDE006901D9 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC937308C7FEDE006901D9 /* internal.h */; };
+		DEAC937C08C7FEDE006901D9 /* maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937408C7FEDE006901D9 /* maketables.c */; };
+		DEAC937D08C7FEDE006901D9 /* pcre.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937508C7FEDE006901D9 /* pcre.c */; };
+		DEAC937E08C7FEDE006901D9 /* pcre.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC937608C7FEDE006901D9 /* pcre.h */; };
+		DEAC937F08C7FEDE006901D9 /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937708C7FEDE006901D9 /* study.c */; };
+		DEC2DF1408D0E75100E64CA6 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2DF1308D0E75100E64CA6 /* DebugLog.m */; };
+		DEC2DF1508D0E75100E64CA6 /* DebugLog.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2DF1208D0E75100E64CA6 /* DebugLog.h */; };
+		DEC2DF1608D0E75100E64CA6 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2DF1308D0E75100E64CA6 /* DebugLog.m */; };
+		DEE41B6D08CFD33700F96F3E /* NSData_HMext.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE41B6C08CFD33700F96F3E /* NSData_HMext.m */; };
+		DEE41B6E08CFD33700F96F3E /* NSData_HMext.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE41B6B08CFD33700F96F3E /* NSData_HMext.h */; };
+		DEE41B6F08CFD33700F96F3E /* NSData_HMext.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE41B6C08CFD33700F96F3E /* NSData_HMext.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA3F0018CDD111CA2923 /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			name = Development;
+		};
+		014CEA400018CDD111CA2923 /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		459334B40832C4CD00FF1A15 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		45796126083162D100A923A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		45967FED0832BF890009C12F /* CMetadataImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMetadataImporter.h; sourceTree = "<group>"; };
+		45967FEE0832BF890009C12F /* CMetadataImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMetadataImporter.m; sourceTree = "<group>"; wrapsLines = 1; };
+		45967FF30832BF890009C12F /* GetMetadataForFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
+		45967FF50832BF890009C12F /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4596802C0832BFC50009C12F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4596802E0832BFC50009C12F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/schema.strings; sourceTree = "<group>"; };
+		4596802F0832BFC50009C12F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		459680300832BFC50009C12F /* schema.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schema.xml; sourceTree = "<group>"; };
+		8D576316048677EA00EA77CD /* Lisp Metadata Importer.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lisp Metadata Importer.mdimporter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86B05260671AA6E00DD9006 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		DE4C707408CE1588001A80F8 /* NSString_HMext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSString_HMext.h; sourceTree = "<group>"; };
+		DE4C707508CE1588001A80F8 /* NSString_HMext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_HMext.m; sourceTree = "<group>"; };
+		DE75ACF508CD1449008AC2B5 /* LispMetadataImporterTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LispMetadataImporterTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE75AD0008CD14BB008AC2B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
+		DEAC936B08C7FEA8006901D9 /* AGRegex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AGRegex.h; sourceTree = "<group>"; };
+		DEAC936C08C7FEA8006901D9 /* AGRegex.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AGRegex.m; sourceTree = "<group>"; };
+		DEAC937008C7FEDE006901D9 /* chartables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = chartables.c; sourceTree = "<group>"; };
+		DEAC937108C7FEDE006901D9 /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DEAC937208C7FEDE006901D9 /* get.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = get.c; sourceTree = "<group>"; };
+		DEAC937308C7FEDE006901D9 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		DEAC937408C7FEDE006901D9 /* maketables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = maketables.c; sourceTree = "<group>"; };
+		DEAC937508C7FEDE006901D9 /* pcre.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pcre.c; sourceTree = "<group>"; };
+		DEAC937608C7FEDE006901D9 /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pcre.h; sourceTree = "<group>"; };
+		DEAC937708C7FEDE006901D9 /* study.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = study.c; sourceTree = "<group>"; };
+		DEC2DF1208D0E75100E64CA6 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
+		DEC2DF1308D0E75100E64CA6 /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
+		DEE41B6B08CFD33700F96F3E /* NSData_HMext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSData_HMext.h; sourceTree = "<group>"; };
+		DEE41B6C08CFD33700F96F3E /* NSData_HMext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSData_HMext.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D576313048677EA00EA77CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D576314048677EA00EA77CD /* CoreFoundation.framework in Frameworks */,
+				C86B05270671AA6E00DD9006 /* CoreServices.framework in Frameworks */,
+				45796127083162D100A923A6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE75ACF308CD1449008AC2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Python Metadata Importer */ = {
+			isa = PBXGroup;
+			children = (
+				DE75ACFD08CD1494008AC2B5 /* LispMetadataImporterTest */,
+				45967FEC0832BF890009C12F /* Source */,
+				4596802A0832BFC50009C12F /* Resources */,
+				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+			);
+			name = "Python Metadata Importer";
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				45796126083162D100A923A6 /* Foundation.framework */,
+				C86B05260671AA6E00DD9006 /* CoreServices.framework */,
+				0AA1909FFE8422F4C02AAC07 /* CoreFoundation.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D576316048677EA00EA77CD /* Lisp Metadata Importer.mdimporter */,
+				DE75ACF508CD1449008AC2B5 /* LispMetadataImporterTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45967FEC0832BF890009C12F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DEE41B6B08CFD33700F96F3E /* NSData_HMext.h */,
+				DEE41B6C08CFD33700F96F3E /* NSData_HMext.m */,
+				DE4C707408CE1588001A80F8 /* NSString_HMext.h */,
+				DE4C707508CE1588001A80F8 /* NSString_HMext.m */,
+				DEC2DF1208D0E75100E64CA6 /* DebugLog.h */,
+				DEC2DF1308D0E75100E64CA6 /* DebugLog.m */,
+				45967FF50832BF890009C12F /* main.c */,
+				45967FF30832BF890009C12F /* GetMetadataForFile.m */,
+				45967FED0832BF890009C12F /* CMetadataImporter.h */,
+				45967FEE0832BF890009C12F /* CMetadataImporter.m */,
+				DEAC936708C7FE6C006901D9 /* AGRegex */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4596802A0832BFC50009C12F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4596802B0832BFC50009C12F /* InfoPlist.strings */,
+				4596802D0832BFC50009C12F /* schema.strings */,
+				4596802F0832BFC50009C12F /* Info.plist */,
+				459680300832BFC50009C12F /* schema.xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE75ACFD08CD1494008AC2B5 /* LispMetadataImporterTest */ = {
+			isa = PBXGroup;
+			children = (
+				DE75AD0008CD14BB008AC2B5 /* main.m */,
+			);
+			name = LispMetadataImporterTest;
+			sourceTree = "<group>";
+		};
+		DEAC936708C7FE6C006901D9 /* AGRegex */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC936F08C7FEDE006901D9 /* pcre-4.3 */,
+				DEAC936B08C7FEA8006901D9 /* AGRegex.h */,
+				DEAC936C08C7FEA8006901D9 /* AGRegex.m */,
+			);
+			name = AGRegex;
+			path = Source/AGRegex;
+			sourceTree = SOURCE_ROOT;
+		};
+		DEAC936F08C7FEDE006901D9 /* pcre-4.3 */ = {
+			isa = PBXGroup;
+			children = (
+				DEAC937008C7FEDE006901D9 /* chartables.c */,
+				DEAC937108C7FEDE006901D9 /* config.h */,
+				DEAC937208C7FEDE006901D9 /* get.c */,
+				DEAC937308C7FEDE006901D9 /* internal.h */,
+				DEAC937408C7FEDE006901D9 /* maketables.c */,
+				DEAC937508C7FEDE006901D9 /* pcre.c */,
+				DEAC937608C7FEDE006901D9 /* pcre.h */,
+				DEAC937708C7FEDE006901D9 /* study.c */,
+			);
+			path = "pcre-4.3";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D57630E048677EA00EA77CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459680030832BF890009C12F /* CMetadataImporter.h in Headers */,
+				DEAC936D08C7FEA8006901D9 /* AGRegex.h in Headers */,
+				DEAC937908C7FEDE006901D9 /* config.h in Headers */,
+				DEAC937B08C7FEDE006901D9 /* internal.h in Headers */,
+				DEAC937E08C7FEDE006901D9 /* pcre.h in Headers */,
+				DEE41B6E08CFD33700F96F3E /* NSData_HMext.h in Headers */,
+				DEC2DF1508D0E75100E64CA6 /* DebugLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D57630D048677EA00EA77CD /* Lisp Metadata Importer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45E30AB108566B62009FA00C /* Build configuration list for PBXNativeTarget "Lisp Metadata Importer" */;
+			buildPhases = (
+				8D57630E048677EA00EA77CD /* Headers */,
+				8D57630F048677EA00EA77CD /* Resources */,
+				8D576311048677EA00EA77CD /* Sources */,
+				8D576313048677EA00EA77CD /* Frameworks */,
+				8D576315048677EA00EA77CD /* Rez */,
+				459334B40832C4CD00FF1A15 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/Spotlight;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Python Metadata Importer";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mdimporter;
+				ZERO_LINK = NO;
+			};
+			dependencies = (
+			);
+			name = "Lisp Metadata Importer";
+			productInstallPath = /Library/Spotlight;
+			productName = "Python Metadata Importer";
+			productReference = 8D576316048677EA00EA77CD /* Lisp Metadata Importer.mdimporter */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DE75ACF408CD1449008AC2B5 /* LispMetadataImporterTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE75ACF708CD1473008AC2B5 /* Build configuration list for PBXNativeTarget "LispMetadataImporterTest" */;
+			buildPhases = (
+				DE75ACF208CD1449008AC2B5 /* Sources */,
+				DE75ACF308CD1449008AC2B5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = LispMetadataImporterTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = LispMetadataImporterTest;
+			productName = LispMetadataImporterTest;
+			productReference = DE75ACF508CD1449008AC2B5 /* LispMetadataImporterTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 45E30AB508566B62009FA00C /* Build configuration list for PBXProject "Lisp Metadata Importer" */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4.0.sdk;
+			};
+			buildStyles = (
+				014CEA3F0018CDD111CA2923 /* Development */,
+				014CEA400018CDD111CA2923 /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* Python Metadata Importer */;
+			projectDirPath = "";
+			targets = (
+				8D57630D048677EA00EA77CD /* Lisp Metadata Importer */,
+				DE75ACF408CD1449008AC2B5 /* LispMetadataImporterTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D57630F048677EA00EA77CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459680310832BFC50009C12F /* InfoPlist.strings in Resources */,
+				459680320832BFC50009C12F /* schema.strings in Resources */,
+				459680340832BFC50009C12F /* schema.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D576315048677EA00EA77CD /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D576311048677EA00EA77CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459680070832BF890009C12F /* GetMetadataForFile.m in Sources */,
+				459680090832BF890009C12F /* main.c in Sources */,
+				457F54E70832F2830043FBA6 /* CMetadataImporter.m in Sources */,
+				DEAC936E08C7FEA8006901D9 /* AGRegex.m in Sources */,
+				DEAC937808C7FEDE006901D9 /* chartables.c in Sources */,
+				DEAC937A08C7FEDE006901D9 /* get.c in Sources */,
+				DEAC937C08C7FEDE006901D9 /* maketables.c in Sources */,
+				DEAC937D08C7FEDE006901D9 /* pcre.c in Sources */,
+				DEAC937F08C7FEDE006901D9 /* study.c in Sources */,
+				DE4C70DB08CE2E1D001A80F8 /* NSString_HMext.m in Sources */,
+				DEE41B6F08CFD33700F96F3E /* NSData_HMext.m in Sources */,
+				DEC2DF1608D0E75100E64CA6 /* DebugLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE75ACF208CD1449008AC2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE75AD0108CD14BB008AC2B5 /* main.m in Sources */,
+				DE75AD0208CD14E6008AC2B5 /* CMetadataImporter.m in Sources */,
+				DE75AD0308CD14F3008AC2B5 /* AGRegex.m in Sources */,
+				DE75AD0408CD1523008AC2B5 /* chartables.c in Sources */,
+				DE75AD0508CD1527008AC2B5 /* get.c in Sources */,
+				DE75AD0608CD152A008AC2B5 /* maketables.c in Sources */,
+				DE75AD0708CD152D008AC2B5 /* pcre.c in Sources */,
+				DE75AD0808CD1530008AC2B5 /* study.c in Sources */,
+				DE4C707608CE1588001A80F8 /* NSString_HMext.m in Sources */,
+				DEE41B6D08CFD33700F96F3E /* NSData_HMext.m in Sources */,
+				DEC2DF1408D0E75100E64CA6 /* DebugLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4596802B0832BFC50009C12F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4596802C0832BFC50009C12F /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4596802D0832BFC50009C12F /* schema.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4596802E0832BFC50009C12F /* English */,
+			);
+			name = schema.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45E30AB208566B62009FA00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/Spotlight;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = (
+					"-DSUPPORT_UTF8",
+					"-DPOSIX_MALLOC_THRESHOLD=10",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Lisp Metadata Importer";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mdimporter;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		45E30AB308566B62009FA00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/Spotlight;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = (
+					"-DSUPPORT_UTF8",
+					"-DPOSIX_MALLOC_THRESHOLD=10",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Lisp Metadata Importer";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mdimporter;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		45E30AB408566B62009FA00C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = /System/Library/Frameworks;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = /Library/Spotlight;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = Bundle;
+				OTHER_CFLAGS = (
+					"-DSUPPORT_UTF8",
+					"-DPOSIX_MALLOC_THRESHOLD=10",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Lisp Metadata Importer";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = mdimporter;
+				ZERO_LINK = NO;
+			};
+			name = Default;
+		};
+		45E30AB608566B62009FA00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		45E30AB708566B62009FA00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		45E30AB808566B62009FA00C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Default;
+		};
+		DE75ACF808CD1473008AC2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = (
+					"-DSUPPORT_UTF8",
+					"-DPOSIX_MALLOC_THRESHOLD=10",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = LispMetadataImporterTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		DE75ACF908CD1473008AC2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = (
+					"-DSUPPORT_UTF8",
+					"-DPOSIX_MALLOC_THRESHOLD=10",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = LispMetadataImporterTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		DE75ACFA08CD1473008AC2B5 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/local/bin;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = (
+					"-DSUPPORT_UTF8",
+					"-DPOSIX_MALLOC_THRESHOLD=10",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = LispMetadataImporterTest;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45E30AB108566B62009FA00C /* Build configuration list for PBXNativeTarget "Lisp Metadata Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E30AB208566B62009FA00C /* Debug */,
+				45E30AB308566B62009FA00C /* Release */,
+				45E30AB408566B62009FA00C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		45E30AB508566B62009FA00C /* Build configuration list for PBXProject "Lisp Metadata Importer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E30AB608566B62009FA00C /* Debug */,
+				45E30AB708566B62009FA00C /* Release */,
+				45E30AB808566B62009FA00C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		DE75ACF708CD1473008AC2B5 /* Build configuration list for PBXNativeTarget "LispMetadataImporterTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE75ACF808CD1473008AC2B5 /* Debug */,
+				DE75ACF908CD1473008AC2B5 /* Release */,
+				DE75ACFA08CD1473008AC2B5 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

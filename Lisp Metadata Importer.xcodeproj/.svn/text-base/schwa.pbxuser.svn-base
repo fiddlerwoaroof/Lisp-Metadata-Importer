@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeBuildStyle = 014CEA3F0018CDD111CA2923 /* Development */;
+		activeExecutable = 45F9531B08319C400073B07B /* Executable */;
+		activeTarget = 8D57630D048677EA00EA77CD /* Python Metadata Importer */;
+		addToTargets = (
+			8D57630D048677EA00EA77CD /* Python Metadata Importer */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 45796102083160E500A923A6 /* Code sense */;
+		executables = (
+			45F9531B08319C400073B07B /* Executable */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXErrorsWarningsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXErrorsWarningsDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					574,
+					300,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXErrorsWarningsDataSource_TypeID,
+					PBXErrorsWarningsDataSource_MessageID,
+					PBXErrorsWarningsDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					571,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					684,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					120,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					624.2085,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					200,
+					504,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 140385254;
+			PBXWorkspaceStateSaveDate = 140385254;
+		};
+		perUserProjectItems = {
+			45234A0E0859386A007977F8 /* PBXTextBookmark */ = 45234A0E0859386A007977F8 /* PBXTextBookmark */;
+			457A2F5D085E1BF100480ED0 /* PBXTextBookmark */ = 457A2F5D085E1BF100480ED0 /* PBXTextBookmark */;
+			458F2CD60833E82700CB6B11 /* PBXTextBookmark */ = 458F2CD60833E82700CB6B11 /* PBXTextBookmark */;
+			458F2CDC0833E82700CB6B11 /* PBXTextBookmark */ = 458F2CDC0833E82700CB6B11 /* PBXTextBookmark */;
+			458F2E380833F04C00CB6B11 /* PBXTextBookmark */ = 458F2E380833F04C00CB6B11 /* PBXTextBookmark */;
+			458F2E970833F66B00CB6B11 /* PBXTextBookmark */ = 458F2E970833F66B00CB6B11 /* PBXTextBookmark */;
+			458F2E9F0833F66B00CB6B11 /* PBXTextBookmark */ = 458F2E9F0833F66B00CB6B11 /* PBXTextBookmark */;
+			458F2EA20833F66B00CB6B11 /* PBXTextBookmark */ = 458F2EA20833F66B00CB6B11 /* PBXTextBookmark */;
+			458F2ED20833F7B800CB6B11 /* PBXTextBookmark */ = 458F2ED20833F7B800CB6B11 /* PBXTextBookmark */;
+			458F2EFD0833F92A00CB6B11 /* PBXTextBookmark */ = 458F2EFD0833F92A00CB6B11 /* PBXTextBookmark */;
+			458F2F1F0833FA0200CB6B11 /* PBXTextBookmark */ = 458F2F1F0833FA0200CB6B11 /* PBXTextBookmark */;
+			458F2FD00833FE3D00CB6B11 /* PBXTextBookmark */ = 458F2FD00833FE3D00CB6B11 /* PBXTextBookmark */;
+			458F2FD20833FE3D00CB6B11 /* PBXTextBookmark */ = 458F2FD20833FE3D00CB6B11 /* PBXTextBookmark */;
+			458F2FF50834001500CB6B11 /* PBXTextBookmark */ = 458F2FF50834001500CB6B11 /* PBXTextBookmark */;
+			458F30430834051C00CB6B11 /* PBXTextBookmark */ = 458F30430834051C00CB6B11 /* PBXTextBookmark */;
+			458F3064083406A800CB6B11 /* PBXTextBookmark */ = 458F3064083406A800CB6B11 /* PBXTextBookmark */;
+			458F314C0834233D00CB6B11 /* PBXTextBookmark */ = 458F314C0834233D00CB6B11 /* PBXTextBookmark */;
+			458F314D0834233D00CB6B11 /* PBXTextBookmark */ = 458F314D0834233D00CB6B11 /* PBXTextBookmark */;
+			459279A308478862005D51F9 /* PBXTextBookmark */ = 459279A308478862005D51F9 /* PBXTextBookmark */;
+			459279A408478862005D51F9 /* PBXTextBookmark */ = 459279A408478862005D51F9 /* PBXTextBookmark */;
+			45BC8E4608357EF500333919 /* PBXTextBookmark */ = 45BC8E4608357EF500333919 /* PBXTextBookmark */;
+			45C999EE084615DA00A9055D /* PBXTextBookmark */ = 45C999EE084615DA00A9055D /* PBXTextBookmark */;
+			45C999F3084615DA00A9055D /* PBXTextBookmark */ = 45C999F3084615DA00A9055D /* PBXTextBookmark */;
+			45C99B33084615F300A9055D /* PBXTextBookmark */ = 45C99B33084615F300A9055D /* PBXTextBookmark */;
+			45C99B470846166300A9055D /* PBXTextBookmark */ = 45C99B470846166300A9055D /* PBXTextBookmark */;
+			45C99B55084616CC00A9055D /* PBXTextBookmark */ = 45C99B55084616CC00A9055D /* PBXTextBookmark */;
+			45D534BC083532990039C245 /* PBXTextBookmark */ = 45D534BC083532990039C245 /* PBXTextBookmark */;
+			45D534BD083532990039C245 /* PBXTextBookmark */ = 45D534BD083532990039C245 /* PBXTextBookmark */;
+			45D7EFCF0847D39D0081FAA9 /* PBXTextBookmark */ = 45D7EFCF0847D39D0081FAA9 /* PBXTextBookmark */;
+			45E30ABB08566C9E009FA00C /* PBXTextBookmark */ = 45E30ABB08566C9E009FA00C /* PBXTextBookmark */;
+			45EB68AD08456F72003CD158 /* PBXTextBookmark */ = 45EB68AD08456F72003CD158 /* PBXTextBookmark */;
+			45EC556A0857C7B9008973A3 /* PBXTextBookmark */ = 45EC556A0857C7B9008973A3 /* PBXTextBookmark */;
+			45F03AD20833D0C400CF8BA6 /* PBXTextBookmark */ = 45F03AD20833D0C400CF8BA6 /* PBXTextBookmark */;
+			45F03B1D0833D2F300CF8BA6 /* PBXTextBookmark */ = 45F03B1D0833D2F300CF8BA6 /* PBXTextBookmark */;
+			45F03B4D0833D4A400CF8BA6 /* PBXTextBookmark */ = 45F03B4D0833D4A400CF8BA6 /* PBXTextBookmark */;
+			45F03B6E0833D54800CF8BA6 /* PBXTextBookmark */ = 45F03B6E0833D54800CF8BA6 /* PBXTextBookmark */;
+			45F03B8C0833D9A800CF8BA6 /* PBXTextBookmark */ = 45F03B8C0833D9A800CF8BA6 /* PBXTextBookmark */;
+			45F03B8D0833D9A800CF8BA6 /* PBXTextBookmark */ = 45F03B8D0833D9A800CF8BA6 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 45796101083160E500A923A6 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	45234A0E0859386A007977F8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FEE0832BF890009C12F /* CMetadataImporter.m */;
+		name = "CMetadataImporter.m: 69";
+		rLen = 0;
+		rLoc = 2792;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 2431;
+	};
+	45796101083160E500A923A6 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 1;
+		scmConfiguration = {
+		};
+		scmType = scm.subversion;
+	};
+	45796102083160E500A923A6 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	457A2F5D085E1BF100480ED0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FEE0832BF890009C12F /* CMetadataImporter.m */;
+		name = "CMetadataImporter.m: 69";
+		rLen = 0;
+		rLoc = 2792;
+		rType = 0;
+		vrLen = 1416;
+		vrLoc = 2431;
+	};
+	458F2CC20833E6AB00CB6B11 /* pythonrun.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = pythonrun.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/pythonrun.h;
+		sourceTree = "<absolute>";
+	};
+	458F2CD60833E82700CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2CC20833E6AB00CB6B11 /* pythonrun.h */;
+		name = "PyAPI_FUNC(void) Py_SetPythonHome(char *);";
+		rLen = 43;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 0;
+	};
+	458F2CDC0833E82700CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2CC20833E6AB00CB6B11 /* pythonrun.h */;
+		name = "PyAPI_FUNC(void) Py_SetPythonHome(char *);";
+		rLen = 43;
+		rLoc = 515;
+		rType = 0;
+		vrLen = 937;
+		vrLoc = 0;
+	};
+	458F2E110833EEF600CB6B11 /* object.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = object.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/object.h;
+		sourceTree = "<absolute>";
+	};
+	458F2E380833F04C00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2E110833EEF600CB6B11 /* object.h */;
+		name = "PyAPI_DATA(PyObject) _Py_NoneStruct; /* Don't use this directly */";
+		rLen = 67;
+		rLoc = 22892;
+		rType = 0;
+		vrLen = 952;
+		vrLoc = 22421;
+	};
+	458F2E970833F66B00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FF50832BF890009C12F /* main.c */;
+		name = "main.c: 10";
+		rLen = 0;
+		rLoc = 1014;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	458F2E9F0833F66B00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FF50832BF890009C12F /* main.c */;
+		name = "main.c: 10";
+		rLen = 0;
+		rLoc = 1014;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 0;
+	};
+	458F2EA20833F66B00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FED0832BF890009C12F /* CMetadataImporter.h */;
+		name = "CMetadataImporter.h: 21";
+		rLen = 0;
+		rLoc = 859;
+		rType = 0;
+		vrLen = 399;
+		vrLoc = 0;
+	};
+	458F2ECB0833F75C00CB6B11 /* ceval.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = ceval.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/ceval.h;
+		sourceTree = "<absolute>";
+	};
+	458F2ED20833F7B800CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FEE0832BF890009C12F /* CMetadataImporter.m */;
+		name = "CMetadataImporter.m: 86";
+		rLen = 0;
+		rLoc = 3059;
+		rType = 0;
+		vrLen = 59;
+		vrLoc = 2147;
+	};
+	458F2EF30833F8D600CB6B11 /* objimpl.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = objimpl.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/objimpl.h;
+		sourceTree = "<absolute>";
+	};
+	458F2EFD0833F92A00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2ECB0833F75C00CB6B11 /* ceval.h */;
+		name = "ceval.h: 14";
+		rLen = 0;
+		rLoc = 281;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 0;
+	};
+	458F2F190833F99C00CB6B11 /* NSDate.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSDate.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSDate.h;
+		sourceTree = "<absolute>";
+	};
+	458F2F1A0833F9B100CB6B11 /* NSCalendarDate.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSCalendarDate.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSCalendarDate.h;
+		sourceTree = "<absolute>";
+	};
+	458F2F1F0833FA0200CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2F190833F99C00CB6B11 /* NSDate.h */;
+		name = timeIntervalSince1970;
+		rLen = 21;
+		rLoc = 470;
+		rType = 0;
+		vrLen = 798;
+		vrLoc = 256;
+	};
+	458F2FB40833FCE300CB6B11 /* dictobject.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = dictobject.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/dictobject.h;
+		sourceTree = "<absolute>";
+	};
+	458F2FC80833FD8F00CB6B11 /* floatobject.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = floatobject.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/floatobject.h;
+		sourceTree = "<absolute>";
+	};
+	458F2FCD0833FDDF00CB6B11 /* NSTimeZone.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSTimeZone.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSTimeZone.h;
+		sourceTree = "<absolute>";
+	};
+	458F2FD00833FE3D00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2E110833EEF600CB6B11 /* object.h */;
+		name = PyObject;
+		rLen = 8;
+		rLoc = 13108;
+		rType = 0;
+		vrLen = 1586;
+		vrLoc = 12411;
+	};
+	458F2FD20833FE3D00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2FC80833FD8F00CB6B11 /* floatobject.h */;
+		name = PyFloat_AsDouble;
+		rLen = 16;
+		rLoc = 917;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 214;
+	};
+	458F2FF50834001500CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2F1A0833F9B100CB6B11 /* NSCalendarDate.h */;
+		name = monthOfYear;
+		rLen = 11;
+		rLoc = 1349;
+		rType = 0;
+		vrLen = 1180;
+		vrLoc = 757;
+	};
+	458F303D083404ED00CB6B11 /* import.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = import.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/import.h;
+		sourceTree = "<absolute>";
+	};
+	458F30430834051C00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F303D083404ED00CB6B11 /* import.h */;
+		name = "PyAPI_FUNC(PyObject *) PyImport_Import(PyObject *name);";
+		rLen = 56;
+		rLoc = 628;
+		rType = 0;
+		vrLen = 1031;
+		vrLoc = 0;
+	};
+	458F3064083406A800CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2FB40833FCE300CB6B11 /* dictobject.h */;
+		name = PyDict_GetItem;
+		rLen = 14;
+		rLoc = 3428;
+		rType = 0;
+		vrLen = 1305;
+		vrLoc = 2895;
+	};
+	458F314C0834233D00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2F1A0833F9B100CB6B11 /* NSCalendarDate.h */;
+		name = "@interface NSCalendarDate : NSDate {";
+		rLen = 37;
+		rLoc = 167;
+		rType = 0;
+		vrLen = 1171;
+		vrLoc = 1060;
+	};
+	458F314D0834233D00CB6B11 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2FCD0833FDDF00CB6B11 /* NSTimeZone.h */;
+		name = "NSTimeZone.h: 24";
+		rLen = 0;
+		rLoc = 526;
+		rType = 0;
+		vrLen = 773;
+		vrLoc = 0;
+	};
+	459279A308478862005D51F9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4596802C0832BFC50009C12F /* English */;
+		name = "English: 2";
+		rLen = 0;
+		rLoc = 44;
+		rType = 0;
+		vrLen = 293;
+		vrLoc = 0;
+	};
+	459279A408478862005D51F9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4596802E0832BFC50009C12F /* English */;
+		name = "English: 5";
+		rLen = 0;
+		rLoc = 197;
+		rType = 0;
+		vrLen = 236;
+		vrLoc = 0;
+	};
+	459334CE0832C57700FF1A15 /* importer.py */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {876, 1792}}";
+			sepNavSelRange = "{486, 0}";
+			sepNavVisRect = "{{0, 0}, {876, 581}}";
+			sepNavWindowFrame = "{{15, 42}, {1281, 785}}";
+		};
+	};
+	45967FED0832BF890009C12F /* CMetadataImporter.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1240, 714}}";
+			sepNavSelRange = "{859, 0}";
+			sepNavVisRect = "{{0, 0}, {1240, 714}}";
+			sepNavWindowFrame = "{{15, 448}, {750, 549}}";
+		};
+	};
+	45967FEE0832BF890009C12F /* CMetadataImporter.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {876, 1414}}";
+			sepNavSelRange = "{2792, 0}";
+			sepNavVisRect = "{{0, 812}, {876, 581}}";
+			sepNavWindowFrame = "{{15, 42}, {1281, 785}}";
+		};
+	};
+	45967FF30832BF890009C12F /* GetMetadataForFile.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {876, 896}}";
+			sepNavSelRange = "{2046, 17}";
+			sepNavVisRect = "{{0, 315}, {876, 581}}";
+		};
+	};
+	45967FF50832BF890009C12F /* main.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1240, 3136}}";
+			sepNavSelRange = "{859, 0}";
+			sepNavVisRect = "{{0, 0}, {1240, 714}}";
+		};
+	};
+	4596802C0832BFC50009C12F /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {920, 597}}";
+			sepNavSelRange = "{44, 0}";
+			sepNavVisRect = "{{0, 0}, {920, 597}}";
+			sepNavWindowFrame = "{{15, 42}, {1281, 785}}";
+		};
+	};
+	4596802E0832BFC50009C12F /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {920, 597}}";
+			sepNavSelRange = "{197, 0}";
+			sepNavVisRect = "{{0, 0}, {920, 597}}";
+		};
+	};
+	4596802F0832BFC50009C12F /* Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1240, 1008}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRect = "{{0, 0}, {1240, 536}}";
+		};
+	};
+	459680300832BFC50009C12F /* schema.xml */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {876, 365}}";
+			sepNavSelRange = "{325, 183}";
+			sepNavVisRect = "{{0, 0}, {876, 365}}";
+		};
+	};
+	45BC8E4608357EF500333919 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 459680300832BFC50009C12F /* schema.xml */;
+		name = "schema.xml: 17";
+		rLen = 0;
+		rLoc = 838;
+		rType = 0;
+		vrLen = 722;
+		vrLoc = 0;
+	};
+	45C999EE084615DA00A9055D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45C999EF084615DA00A9055D /* py_curses.h */;
+		name = "(null): 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 0;
+	};
+	45C999EF084615DA00A9055D /* py_curses.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = py_curses.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/py_curses.h;
+		sourceTree = "<absolute>";
+	};
+	45C999F3084615DA00A9055D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45C999F4084615DA00A9055D /* py_curses.h */;
+		name = "(null): 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 0;
+	};
+	45C999F4084615DA00A9055D /* py_curses.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = py_curses.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/py_curses.h;
+		sourceTree = "<absolute>";
+	};
+	45C99B33084615F300A9055D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2EF30833F8D600CB6B11 /* objimpl.h */;
+		name = "#define PyObject_New(type, typeobj) \\";
+		rLen = 38;
+		rLoc = 6141;
+		rType = 0;
+		vrLen = 1070;
+		vrLoc = 5726;
+	};
+	45C99B470846166300A9055D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 458F2EF30833F8D600CB6B11 /* objimpl.h */;
+		name = "#define PyObject_New(type, typeobj) \\";
+		rLen = 38;
+		rLoc = 6141;
+		rType = 0;
+		vrLen = 1342;
+		vrLoc = 5611;
+	};
+	45C99B55084616CC00A9055D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FED0832BF890009C12F /* CMetadataImporter.h */;
+		name = "CMetadataImporter.h: 10";
+		rLen = 0;
+		rLoc = 383;
+		rType = 0;
+		vrLen = 1683;
+		vrLoc = 0;
+	};
+	45D534BC083532990039C245 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4596802F0832BFC50009C12F /* Info.plist */;
+		name = "Info.plist: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1169;
+		vrLoc = 0;
+	};
+	45D534BD083532990039C245 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4596802E0832BFC50009C12F /* English */;
+		name = "English: 5";
+		rLen = 0;
+		rLoc = 236;
+		rType = 0;
+		vrLen = 236;
+		vrLoc = 0;
+	};
+	45D7EFCF0847D39D0081FAA9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 459680300832BFC50009C12F /* schema.xml */;
+		name = "schema.xml: 7";
+		rLen = 183;
+		rLoc = 325;
+		rType = 0;
+		vrLen = 850;
+		vrLoc = 0;
+	};
+	45E30ABB08566C9E009FA00C /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FF30832BF890009C12F /* GetMetadataForFile.m */;
+		name = CMetadataImporter;
+		rLen = 17;
+		rLoc = 2046;
+		rType = 0;
+		vrLen = 1287;
+		vrLoc = 1127;
+	};
+	45EB68AD08456F72003CD158 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4596802F0832BFC50009C12F /* Info.plist */;
+		name = "Info.plist: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1169;
+		vrLoc = 0;
+	};
+	45EC556A0857C7B9008973A3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 459334CE0832C57700FF1A15 /* importer.py */;
+		name = "importer.py: 33";
+		rLen = 0;
+		rLoc = 1622;
+		rType = 0;
+		vrLen = 1854;
+		vrLoc = 0;
+	};
+	45F03AB40833CF6700CF8BA6 /* NSString.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSString.h;
+		path = /System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSString.h;
+		sourceTree = "<absolute>";
+	};
+	45F03ABF0833CFE400CF8BA6 /* unicodeobject.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = unicodeobject.h;
+		path = /System/Library/Frameworks/Python.framework/Versions/2.3/include/python2.3/unicodeobject.h;
+		sourceTree = "<absolute>";
+	};
+	45F03AD20833D0C400CF8BA6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4596802C0832BFC50009C12F /* English */;
+		name = "English: 7";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 289;
+		vrLoc = 0;
+	};
+	45F03B1D0833D2F300CF8BA6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 459334CE0832C57700FF1A15 /* importer.py */;
+		name = "importer.py: 39";
+		rLen = 0;
+		rLoc = 3511;
+		rType = 0;
+		vrLen = 552;
+		vrLoc = 561;
+	};
+	45F03B4D0833D4A400CF8BA6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45F03ABF0833CFE400CF8BA6 /* unicodeobject.h */;
+		name = PyUnicodeUCS2_FromUnicode;
+		rLen = 25;
+		rLoc = 6672;
+		rType = 0;
+		vrLen = 1785;
+		vrLoc = 5748;
+	};
+	45F03B6E0833D54800CF8BA6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45967FF30832BF890009C12F /* GetMetadataForFile.m */;
+		name = "GetMetadataForFile.m: 8";
+		rLen = 0;
+		rLoc = 1258;
+		rType = 0;
+		vrLen = 671;
+		vrLoc = 0;
+	};
+	45F03B770833D5B700CF8BA6 /* CFString.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CFString.h;
+		path = /System/Library/Frameworks/CoreFoundation.framework/Versions/A/Headers/CFString.h;
+		sourceTree = "<absolute>";
+	};
+	45F03B8C0833D9A800CF8BA6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45F03B770833D5B700CF8BA6 /* CFString.h */;
+		name = CFData;
+		rLen = 6;
+		rLoc = 15547;
+		rType = 0;
+		vrLen = 1494;
+		vrLoc = 14520;
+	};
+	45F03B8D0833D9A800CF8BA6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 45F03AB40833CF6700CF8BA6 /* NSString.h */;
+		name = CFStringEncoding;
+		rLen = 16;
+		rLoc = 1249;
+		rType = 0;
+		vrLen = 1221;
+		vrLoc = 1120;
+	};
+	45F9531B08319C400073B07B /* Executable */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 1;
+		activeArgIndices = (
+			NO,
+			YES,
+		);
+		argumentStrings = (
+			"-d 2 \"/Users/schwa/Documents/WorkingDirectories/toxic/externals/public/Freeware/Python\\ Metadata\\ Importer/TestData/Test.py\"",
+			"-d 2 \"/Volumes/Home/Users/Shared/Stuff/Stuff/eBooks/diveintopython-5.4/py/openanything.py\"",
+		);
+		configStateDict = {
+		};
+		cppStopOnCatchEnabled = 0;
+		cppStopOnThrowEnabled = 0;
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = 45F9531C08319C400073B07B /* mdimport */;
+		libgmallocEnabled = 0;
+		name = Executable;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+	};
+	45F9531C08319C400073B07B /* mdimport */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = "compiled.mach-o.executable";
+		name = mdimport;
+		path = /usr/bin/mdimport;
+		sourceTree = "<absolute>";
+	};
+	8D57630D048677EA00EA77CD /* Python Metadata Importer */ = {
+		activeExec = 0;
+	};
+}

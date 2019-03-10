@@ -1,0 +1,6 @@
+/* Localized versions of Info.plist keys */
+
+CFBundleName = "Lisp Metadata Importer";
+CFBundleShortVersionString = "0.0.2";
+CFBundleGetInfoString = "Lisp Metadata Importer version 0.0.1, Copyright (c) 2005 John Wiseman (jjwiseman@yahoo.com)";
+NSHumanReadableCopyright = "Copyright (c) 2005 John Wiseman (jjwiseman@yahoo.com)";

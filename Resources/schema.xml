@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema version="1.0" xmlns="http://www.apple.com/metadata"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.apple.com/metadata file:///System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Resources/MetadataSchema.xsd">
+
+	<attributes>
+		<attribute name="org_lisp_definitions" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defuns" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defmethods" multivalued="true" type="CFString"/>
+        <attribute name="org_lisp_defpackages" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defgenerics" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defmacros" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defvars" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defclasses" multivalued="true" type="CFString"/>
+		<attribute name="org_lisp_defstructs" multivalued="true" type="CFString"/>
+	</attributes>
+    
+	<types>
+		<type name="org.lisp.lisp-source">
+			<allattrs>kMDItemTextContent org_lisp_definitions org_lisp_defuns org_lisp_defmethods org_lisp_defgenerics org_lisp_defmacros org_lisp_defvars org_lisp_defclasses org_lisp_defstructs</allattrs>
+            <displayattrs>org_lisp_defpackages org_lisp_defclasses org_lisp_defgenerics org_lisp_defuns org_lisp_defmacros</displayattrs>
+		</type>
+	</types>
+</schema>
+

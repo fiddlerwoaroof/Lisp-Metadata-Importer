@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="47"
+   name=""
+   committed-date="2005-09-08T21:42:03.137090Z"
+   url="svn+ssh://heavymeta.org/usr/local/svn-repos/lisp-spotlight-indexer/trunk/lisp-spotlight-indexer/Lisp%20Metadata%20Importer/Lisp%20Metadata%20Importer.xcodeproj"
+   last-author="wiseman"
+   kind="dir"
+   uuid="be04b032-bdff-0310-9f9d-c0bd38ff17cf"
+   prop-time="2005-09-06T00:00:00.000000Z"
+   revision="49"/>
+<entry
+   committed-rev="54"
+   name="project.pbxproj"
+   text-time="2005-09-14T18:41:25.000000Z"
+   committed-date="2005-09-13T06:50:08.459559Z"
+   checksum="d290e8dd22bcb3cb8eece49f01501456"
+   last-author="wiseman"
+   kind="file"
+   prop-time="2005-09-06T00:00:00.000000Z"
+   revision="54"/>
+<entry
+   committed-rev="1"
+   name="schwa.pbxuser"
+   text-time="2005-09-06T00:00:00.000000Z"
+   committed-date="2005-09-01T22:24:26.351721Z"
+   checksum="eefa88d3114aa5427018c852776b2e9c"
+   last-author="wiseman"
+   kind="file"
+   prop-time="2005-09-06T00:00:00.000000Z"/>
+<entry
+   committed-rev="1"
+   name="schwa.perspective"
+   text-time="2005-09-06T00:00:00.000000Z"
+   committed-date="2005-09-01T22:24:26.351721Z"
+   checksum="9444b40607942a9a6fd964019e1bcd65"
+   last-author="wiseman"
+   kind="file"
+   prop-time="2005-09-06T00:00:00.000000Z"/>
+</wc-entries>

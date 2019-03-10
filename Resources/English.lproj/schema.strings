@@ -1,0 +1,17 @@
+"org_lisp_definitions" = "Lisp Definitions";
+"org_lisp_defuns" = "Lisp Defuns";
+"org_lisp_defmethods" = "Lisp Defmethods";
+"org_lisp_defgenerics" = "Lisp Defgenerics";
+"org_lisp_defmacros" = "Lisp Defmacros";
+"org_lisp_defvars" = "Lisp Defvars";
+"org_lisp_defclasses" = "Lisp Defclasses";
+"org_lisp_defstructs" = "Lisp Defstructs";
+
+"org_lisp_definitions.Description" = "Functions, classes structs and other objects defined in a Lisp file";
+"org_lisp_defuns.Description" = "Functions defined in a Lisp file";
+"org_lisp_defmethods.Description" = "Methods defined in a Lisp file";
+"org_lisp_defgenerics.Description" = "Generic functions defined in a Lisp file";
+"org_lisp_defmacros.Description" = "Macros defined in a Lisp file";
+"org_lisp_defvars.Description" = "Variables, parameters and constants defined in a Lisp file";
+"org_lisp_defclasses.Description" = "Classes defined in a Lisp file";
+"org_lisp_defstructs.Description" = "Structures defined in a Lisp file";
