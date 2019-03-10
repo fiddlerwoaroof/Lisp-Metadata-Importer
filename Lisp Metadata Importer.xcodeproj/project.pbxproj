@@ -21,22 +21,6 @@
 		DE4C70DB08CE2E1D001A80F8 /* NSString_HMext.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C707508CE1588001A80F8 /* NSString_HMext.m */; };
 		DE75AD0108CD14BB008AC2B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE75AD0008CD14BB008AC2B5 /* main.m */; };
 		DE75AD0208CD14E6008AC2B5 /* CMetadataImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45967FEE0832BF890009C12F /* CMetadataImporter.m */; };
-		DE75AD0308CD14F3008AC2B5 /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAC936C08C7FEA8006901D9 /* AGRegex.m */; };
-		DE75AD0408CD1523008AC2B5 /* chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937008C7FEDE006901D9 /* chartables.c */; };
-		DE75AD0508CD1527008AC2B5 /* get.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937208C7FEDE006901D9 /* get.c */; };
-		DE75AD0608CD152A008AC2B5 /* maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937408C7FEDE006901D9 /* maketables.c */; };
-		DE75AD0708CD152D008AC2B5 /* pcre.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937508C7FEDE006901D9 /* pcre.c */; };
-		DE75AD0808CD1530008AC2B5 /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937708C7FEDE006901D9 /* study.c */; };
-		DEAC936D08C7FEA8006901D9 /* AGRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC936B08C7FEA8006901D9 /* AGRegex.h */; };
-		DEAC936E08C7FEA8006901D9 /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = DEAC936C08C7FEA8006901D9 /* AGRegex.m */; };
-		DEAC937808C7FEDE006901D9 /* chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937008C7FEDE006901D9 /* chartables.c */; };
-		DEAC937908C7FEDE006901D9 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC937108C7FEDE006901D9 /* config.h */; };
-		DEAC937A08C7FEDE006901D9 /* get.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937208C7FEDE006901D9 /* get.c */; };
-		DEAC937B08C7FEDE006901D9 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC937308C7FEDE006901D9 /* internal.h */; };
-		DEAC937C08C7FEDE006901D9 /* maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937408C7FEDE006901D9 /* maketables.c */; };
-		DEAC937D08C7FEDE006901D9 /* pcre.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937508C7FEDE006901D9 /* pcre.c */; };
-		DEAC937E08C7FEDE006901D9 /* pcre.h in Headers */ = {isa = PBXBuildFile; fileRef = DEAC937608C7FEDE006901D9 /* pcre.h */; };
-		DEAC937F08C7FEDE006901D9 /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = DEAC937708C7FEDE006901D9 /* study.c */; };
 		DEC2DF1408D0E75100E64CA6 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2DF1308D0E75100E64CA6 /* DebugLog.m */; };
 		DEC2DF1508D0E75100E64CA6 /* DebugLog.h in Headers */ = {isa = PBXBuildFile; fileRef = DEC2DF1208D0E75100E64CA6 /* DebugLog.h */; };
 		DEC2DF1608D0E75100E64CA6 /* DebugLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DEC2DF1308D0E75100E64CA6 /* DebugLog.m */; };
@@ -74,16 +58,6 @@
 		DE4C707508CE1588001A80F8 /* NSString_HMext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_HMext.m; sourceTree = "<group>"; };
 		DE75ACF508CD1449008AC2B5 /* LispMetadataImporterTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LispMetadataImporterTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE75AD0008CD14BB008AC2B5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
-		DEAC936B08C7FEA8006901D9 /* AGRegex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AGRegex.h; sourceTree = "<group>"; };
-		DEAC936C08C7FEA8006901D9 /* AGRegex.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AGRegex.m; sourceTree = "<group>"; };
-		DEAC937008C7FEDE006901D9 /* chartables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = chartables.c; sourceTree = "<group>"; };
-		DEAC937108C7FEDE006901D9 /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		DEAC937208C7FEDE006901D9 /* get.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = get.c; sourceTree = "<group>"; };
-		DEAC937308C7FEDE006901D9 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
-		DEAC937408C7FEDE006901D9 /* maketables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = maketables.c; sourceTree = "<group>"; };
-		DEAC937508C7FEDE006901D9 /* pcre.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pcre.c; sourceTree = "<group>"; };
-		DEAC937608C7FEDE006901D9 /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pcre.h; sourceTree = "<group>"; };
-		DEAC937708C7FEDE006901D9 /* study.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = study.c; sourceTree = "<group>"; };
 		DEC2DF1208D0E75100E64CA6 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
 		DEC2DF1308D0E75100E64CA6 /* DebugLog.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DebugLog.m; sourceTree = "<group>"; };
 		DEE41B6B08CFD33700F96F3E /* NSData_HMext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSData_HMext.h; sourceTree = "<group>"; };
@@ -155,7 +129,6 @@
 				45967FF30832BF890009C12F /* GetMetadataForFile.m */,
 				45967FED0832BF890009C12F /* CMetadataImporter.h */,
 				45967FEE0832BF890009C12F /* CMetadataImporter.m */,
-				DEAC936708C7FE6C006901D9 /* AGRegex */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -179,32 +152,6 @@
 			name = LispMetadataImporterTest;
 			sourceTree = "<group>";
 		};
-		DEAC936708C7FE6C006901D9 /* AGRegex */ = {
-			isa = PBXGroup;
-			children = (
-				DEAC936F08C7FEDE006901D9 /* pcre-4.3 */,
-				DEAC936B08C7FEA8006901D9 /* AGRegex.h */,
-				DEAC936C08C7FEA8006901D9 /* AGRegex.m */,
-			);
-			name = AGRegex;
-			path = Source/AGRegex;
-			sourceTree = SOURCE_ROOT;
-		};
-		DEAC936F08C7FEDE006901D9 /* pcre-4.3 */ = {
-			isa = PBXGroup;
-			children = (
-				DEAC937008C7FEDE006901D9 /* chartables.c */,
-				DEAC937108C7FEDE006901D9 /* config.h */,
-				DEAC937208C7FEDE006901D9 /* get.c */,
-				DEAC937308C7FEDE006901D9 /* internal.h */,
-				DEAC937408C7FEDE006901D9 /* maketables.c */,
-				DEAC937508C7FEDE006901D9 /* pcre.c */,
-				DEAC937608C7FEDE006901D9 /* pcre.h */,
-				DEAC937708C7FEDE006901D9 /* study.c */,
-			);
-			path = "pcre-4.3";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -213,10 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				459680030832BF890009C12F /* CMetadataImporter.h in Headers */,
-				DEAC936D08C7FEA8006901D9 /* AGRegex.h in Headers */,
-				DEAC937908C7FEDE006901D9 /* config.h in Headers */,
-				DEAC937B08C7FEDE006901D9 /* internal.h in Headers */,
-				DEAC937E08C7FEDE006901D9 /* pcre.h in Headers */,
 				DEE41B6E08CFD33700F96F3E /* NSData_HMext.h in Headers */,
 				DEC2DF1508D0E75100E64CA6 /* DebugLog.h in Headers */,
 			);
@@ -318,12 +261,6 @@
 				459680070832BF890009C12F /* GetMetadataForFile.m in Sources */,
 				459680090832BF890009C12F /* main.c in Sources */,
 				457F54E70832F2830043FBA6 /* CMetadataImporter.m in Sources */,
-				DEAC936E08C7FEA8006901D9 /* AGRegex.m in Sources */,
-				DEAC937808C7FEDE006901D9 /* chartables.c in Sources */,
-				DEAC937A08C7FEDE006901D9 /* get.c in Sources */,
-				DEAC937C08C7FEDE006901D9 /* maketables.c in Sources */,
-				DEAC937D08C7FEDE006901D9 /* pcre.c in Sources */,
-				DEAC937F08C7FEDE006901D9 /* study.c in Sources */,
 				DE4C70DB08CE2E1D001A80F8 /* NSString_HMext.m in Sources */,
 				DEE41B6F08CFD33700F96F3E /* NSData_HMext.m in Sources */,
 				DEC2DF1608D0E75100E64CA6 /* DebugLog.m in Sources */,
@@ -336,12 +273,6 @@
 			files = (
 				DE75AD0108CD14BB008AC2B5 /* main.m in Sources */,
 				DE75AD0208CD14E6008AC2B5 /* CMetadataImporter.m in Sources */,
-				DE75AD0308CD14F3008AC2B5 /* AGRegex.m in Sources */,
-				DE75AD0408CD1523008AC2B5 /* chartables.c in Sources */,
-				DE75AD0508CD1527008AC2B5 /* get.c in Sources */,
-				DE75AD0608CD152A008AC2B5 /* maketables.c in Sources */,
-				DE75AD0708CD152D008AC2B5 /* pcre.c in Sources */,
-				DE75AD0808CD1530008AC2B5 /* study.c in Sources */,
 				DE4C707608CE1588001A80F8 /* NSString_HMext.m in Sources */,
 				DEE41B6D08CFD33700F96F3E /* NSData_HMext.m in Sources */,
 				DEC2DF1408D0E75100E64CA6 /* DebugLog.m in Sources */,

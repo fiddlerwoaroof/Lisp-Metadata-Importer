@@ -17,7 +17,7 @@
 @implementation CMetadataImporter
 
 
-long MaxSourceSize = 500000; // Default maximum number of bytes that will be read for indexing purposes.
+int MaxSourceSize = 500000; // Default maximum number of bytes that will be read for indexing purposes.
 long NO_MAXIMUM = -1;
 
 
@@ -28,42 +28,42 @@ static BOOL StaticDataIsInitialized = NO;
 // Lots of regexes in string form, waiting to be compiled.
 
 static NSString *LispDef1_pat = @"(?i)^\\(def[^\\s]*[\\s\\']+(\\(setf\\s+[^\\s]+\\))";
-static AGRegex *LispDef1_RE = nil;
+static NSRegularExpression *LispDef1_RE = nil;
 
 static NSString *LispDef2_pat = @"(?i)^\\(def[^\\s]*[\\s\\']+([^\\s\\)]+)";
-static AGRegex *LispDef2_RE = nil;
+static NSRegularExpression *LispDef2_RE = nil;
 
 static NSString *LispDefun_pat = @"(?i)^\\(defun\\s+([^\\s\\)\\(]+)";
-static AGRegex *LispDefun_RE = nil;
+static NSRegularExpression *LispDefun_RE = nil;
 
 static NSString *LispDefunsetf_pat = @"(?i)^\\(defun\\s+(\\(setf\\s+[^\\s]+\\))";
-static AGRegex *LispDefunsetf_RE = nil;
+static NSRegularExpression *LispDefunsetf_RE = nil;
 
 static NSString *LispDefmethod_pat = @"(?i)^\\(defmethod\\s+([^\\s\\)\\(]+)";
-static AGRegex *LispDefmethod_RE = nil;
+static NSRegularExpression *LispDefmethod_RE = nil;
 
 static NSString *LispDefmethodsetf_pat = @"(?i)^\\(defmethod\\s+(\\(setf\\s+[^\\s]+\\))";
-static AGRegex *LispDefmethodsetf_RE = nil;
+static NSRegularExpression *LispDefmethodsetf_RE = nil;
 
 static NSString *LispDefgeneric_pat = @"(?i)^\\(defgeneric\\s+((?:[^\\s\\)\\(]+|\\(setf\\s+[^\\s]+\\)))";
-static AGRegex *LispDefgeneric_RE = nil;
+static NSRegularExpression *LispDefgeneric_RE = nil;
 
 static NSString *LispDefgenericsetf_pat = @"(?i)^\\(defgeneric\\s+(\\(setf\\s+[^\\s]+\\))";
-static AGRegex *LispDefgenericsetf_RE = nil;
+static NSRegularExpression *LispDefgenericsetf_RE = nil;
 
 static NSString *LispDefmacro_pat = @"(?i)^\\(defmacro\\s+([^\\s\\)]+)";
-static AGRegex *LispDefmacro_RE = nil;
+static NSRegularExpression *LispDefmacro_RE = nil;
 
 static NSString *LispDefclass_pat = @"(?i)^\\(defclass\\s+([^\\s\\)]+)";
-static AGRegex *LispDefclass_RE = nil;
+static NSRegularExpression *LispDefclass_RE = nil;
 
 static NSString *LispDefstruct_pat = @"(?i)^\\(defstruct\\s+\\(?([^\\s\\)]+)";
-static AGRegex *LispDefstruct_RE = nil;
+static NSRegularExpression *LispDefstruct_RE = nil;
 
 static NSString *LispDefvar_pat = @"(?i)^\\((?:defvar|defparameter|defconstant)\\s+([^\\s\\)]+)";
-static AGRegex *LispDefvar_RE = nil;
+static NSRegularExpression *LispDefvar_RE = nil;
 
-
+static NSError *err = nil;
 
 - (void)initStaticData
 {
@@ -98,18 +98,42 @@ static AGRegex *LispDefvar_RE = nil;
     }
     
     // Precompile our regexes.
-    LispDef1_RE = [[AGRegex alloc] initWithPattern:LispDef1_pat];
-    LispDef2_RE = [[AGRegex alloc] initWithPattern:LispDef2_pat];
-    LispDefun_RE = [[AGRegex alloc] initWithPattern:LispDefun_pat];
-    LispDefunsetf_RE = [[AGRegex alloc] initWithPattern:LispDefunsetf_pat];
-    LispDefmethod_RE = [[AGRegex alloc] initWithPattern:LispDefmethod_pat];
-    LispDefmethodsetf_RE = [[AGRegex alloc] initWithPattern:LispDefmethodsetf_pat];
-    LispDefgeneric_RE = [[AGRegex alloc] initWithPattern:LispDefgeneric_pat];
-    LispDefgenericsetf_RE = [[AGRegex alloc] initWithPattern:LispDefgenericsetf_pat];
-    LispDefclass_RE = [[AGRegex alloc] initWithPattern:LispDefclass_pat];
-    LispDefstruct_RE = [[AGRegex alloc] initWithPattern:LispDefstruct_pat];
-    LispDefvar_RE = [[AGRegex alloc] initWithPattern:LispDefvar_pat];
-    LispDefmacro_RE = [[AGRegex alloc] initWithPattern:LispDefmacro_pat];
+    LispDef1_RE = [NSRegularExpression regularExpressionWithPattern:LispDef1_pat
+                                                            options:NSRegularExpressionCaseInsensitive
+                                                              error:&err];
+    LispDef2_RE = [NSRegularExpression regularExpressionWithPattern:LispDef2_pat
+                                                            options:NSRegularExpressionCaseInsensitive
+                                                              error:&err];
+    LispDefun_RE = [NSRegularExpression regularExpressionWithPattern:LispDefun_pat
+                                                             options:NSRegularExpressionCaseInsensitive
+                                                               error:&err];
+    LispDefunsetf_RE = [NSRegularExpression regularExpressionWithPattern:LispDefunsetf_pat
+                                                                 options:NSRegularExpressionCaseInsensitive
+                                                                   error:&err];
+    LispDefmethod_RE = [NSRegularExpression regularExpressionWithPattern:LispDefmethod_pat
+                                                                 options:NSRegularExpressionCaseInsensitive
+                                                                   error:&err];
+    LispDefmethodsetf_RE = [NSRegularExpression regularExpressionWithPattern:LispDefmethodsetf_pat
+                                                                     options:NSRegularExpressionCaseInsensitive
+                                                                       error:&err];
+    LispDefgeneric_RE = [NSRegularExpression regularExpressionWithPattern:LispDefgeneric_pat
+                                                                  options:NSRegularExpressionCaseInsensitive
+                                                                    error:&err];
+    LispDefgenericsetf_RE = [NSRegularExpression regularExpressionWithPattern:LispDefgenericsetf_pat
+                                                                      options:NSRegularExpressionCaseInsensitive
+                                                                        error:&err];
+    LispDefclass_RE = [NSRegularExpression regularExpressionWithPattern:LispDefclass_pat
+                                                                options:NSRegularExpressionCaseInsensitive
+                                                                  error:&err];
+    LispDefstruct_RE = [NSRegularExpression regularExpressionWithPattern:LispDefstruct_pat
+                                                                 options:NSRegularExpressionCaseInsensitive
+                                                                   error:&err];
+    LispDefvar_RE = [NSRegularExpression regularExpressionWithPattern:LispDefvar_pat
+                                                              options:NSRegularExpressionCaseInsensitive
+                                                                error:&err];
+    LispDefmacro_RE = [NSRegularExpression regularExpressionWithPattern:LispDefmacro_pat
+                                                                options:NSRegularExpressionCaseInsensitive
+                                                                  error:&err];
     
     DebugLog(DEBUG_LEVEL_DEBUG, @"Static data has been initialized.");
 }
@@ -182,12 +206,13 @@ static NSStringEncoding PossibleSourceTextEncodings[] = {	NSUTF8StringEncoding,
 // Adds metadata values to the specified dictionary under the
 // specified key, using the specified regular expression.
 
-- (BOOL)addMatchesTo:(NSMutableDictionary *)attributes fromLine:(NSString *)line usingRE:(AGRegex *)regex forKey:(NSString *)key
+- (BOOL)addMatchesTo:(NSMutableDictionary *)attributes fromLine:(NSString *)line usingRE:(NSRegularExpression *)regex forKey:(NSString *)key
 {
-    AGRegexMatch *match = [regex findInString:line];
+    NSTextCheckingResult *match = [regex firstMatchInString:line options:NSMatchingAnchored range:NSMakeRange(0, [line length])];
     if (match)
     {
-        NSString *name = [match groupAtIndex: 1];
+        NSLog(@"%s", line);
+        NSString *name = [line substringWithRange: [match rangeAtIndex:1]];
         [[attributes objectForKey:key] addObject:name];
         return YES;
     }

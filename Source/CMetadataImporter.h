@@ -10,8 +10,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "AGRegex.h"
-
 @interface CMetadataImporter : NSObject {
     
 }
@@ -24,7 +22,7 @@
 // "Private" methods.
 
 - (void)initStaticData;
-- (BOOL)addMatchesTo:(NSMutableDictionary *)attributes fromLine:(NSString *)line usingRE:(AGRegex *)regex forKey:(NSString *)key;
+- (BOOL)addMatchesTo:(NSMutableDictionary *)attributes fromLine:(NSString *)line usingRE:(NSRegularExpression *)regex forKey:(NSString *)key;
 - (NSString*)readContentsOfFile:(NSString*)path error:(NSError**)theError;
 
 @end
